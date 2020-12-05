@@ -11,17 +11,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Ladderly
-          {/* Welcome to <a href="https://nextjs.org">Next.js!</a> */}
-        </h1>
+        <h1 className={styles.title}>Ladderly</h1>
         <Link color="inherit" href="/login">
           Login
-        </Link>{" "}
-        {/* <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p> */}
+        </Link>
+
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Land a Job 🔥</h3>
