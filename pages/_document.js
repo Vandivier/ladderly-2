@@ -7,16 +7,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>
-          <title>Ladderly</title>
-          <meta charSet="utf-8" />
-          <meta
-            name="viewport"
-            content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
-          />
-          <meta name="theme-color" content={theme.palette.primary.main} />
-        </Head>
-
+        <Head></Head>
         <body>
           <Main />
           <NextScript />

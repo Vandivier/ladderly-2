@@ -13,7 +13,7 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
-function FooterLinks() {
+export function FooterLinks() {
   return (
     <nav align="center">
       <Link href="/" passHref>
