@@ -1,10 +1,9 @@
-import { createMuiTheme } from "@material-ui/core/styles";
 import { red } from "@material-ui/core/colors";
+import { createMuiTheme } from "@material-ui/core/styles";
 
 const isDarkMode = false;
-
-const primaryLight = "#d6ebf5";
 const primaryGreyed = "#627884";
+const primaryLight = "#d6ebf5";
 
 const theme = isDarkMode
   ? createMuiTheme({

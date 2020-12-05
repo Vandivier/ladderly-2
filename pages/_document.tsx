@@ -1,6 +1,8 @@
+import Document, { Head, Html, Main, NextScript } from "next/document";
 import React from "react";
-import Document, { Html, Head, Main, NextScript } from "next/document";
+
 import { ServerStyleSheets } from "@material-ui/styles";
+
 import theme from "../lib/theme";
 
 class MyDocument extends Document {

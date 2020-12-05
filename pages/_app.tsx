@@ -1,14 +1,14 @@
 import "../styles/globals.css";
 
-import React from "react";
-import PropTypes from "prop-types";
-import { ThemeProvider } from "@material-ui/core/styles";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import theme from "../lib/theme";
-
-import Head from "next/head";
-
 import { Provider as SessionProvider } from "next-auth/client";
+import Head from "next/head";
+import PropTypes from "prop-types";
+import React from "react";
+
+import CssBaseline from "@material-ui/core/CssBaseline";
+import { ThemeProvider } from "@material-ui/core/styles";
+
+import theme from "../lib/theme";
 
 export default function App(props) {
   const { Component, pageProps } = props;

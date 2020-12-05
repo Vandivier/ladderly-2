@@ -1,21 +1,22 @@
-import React from "react";
-import Avatar from "@material-ui/core/Avatar";
-import Button from "@material-ui/core/Button";
-import TextField from "@material-ui/core/TextField";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Checkbox from "@material-ui/core/Checkbox";
-import MaterialLink from "@material-ui/core/Link";
 import Link from "next/link";
-import Grid from "@material-ui/core/Grid";
+import React from "react";
+
+import Avatar from "@material-ui/core/Avatar";
 import Box from "@material-ui/core/Box";
-import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
-import Typography from "@material-ui/core/Typography";
-import { makeStyles } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
+import Checkbox from "@material-ui/core/Checkbox";
 import Container from "@material-ui/core/Container";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import Grid from "@material-ui/core/Grid";
+import MaterialLink from "@material-ui/core/Link";
+import { makeStyles } from "@material-ui/core/styles";
+import TextField from "@material-ui/core/TextField";
+import Typography from "@material-ui/core/Typography";
+import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 
 export function FooterLinks() {
   return (
-    <nav align="center">
+    <nav style={{ margin: "auto" }}>
       <Link href="/" passHref>
         <MaterialLink color="secondary">Home</MaterialLink>
       </Link>
@@ -92,14 +93,14 @@ export default function SignIn() {
           </Button>
           <Grid container>
             <Grid item xs>
-              <Link href="#" variant="body2">
+              <MaterialLink href="#" variant="body2">
                 Forgot password?
-              </Link>
+              </MaterialLink>
             </Grid>
             <Grid item>
-              <Link href="#" variant="body2">
+              <MaterialLink href="#" variant="body2">
                 {"Don't have an account? Sign Up"}
-              </Link>
+              </MaterialLink>
             </Grid>
           </Grid>
         </form>
