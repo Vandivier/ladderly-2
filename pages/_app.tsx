@@ -10,7 +10,7 @@ import { ThemeProvider } from '@material-ui/core/styles';
 
 import theme from '../lib/theme';
 
-export default function App(props) {
+export default function App(props: { Component: any; pageProps: any }): JSX.Element {
     const { Component, pageProps } = props;
 
     return (

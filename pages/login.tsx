@@ -14,7 +14,7 @@ import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 
-export function FooterLinks() {
+export function FooterLinks(): JSX.Element {
     return (
         <nav style={{ margin: 'auto' }}>
             <Link href="/" passHref>
@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function SignIn() {
+export default function SignIn(): JSX.Element {
     const classes = useStyles();
 
     return (

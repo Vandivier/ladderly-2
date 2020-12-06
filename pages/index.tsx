@@ -4,7 +4,7 @@ import MaterialLink from '@material-ui/core/Link';
 
 import HomeStyle from '../styles/index.styles';
 
-export default function Home() {
+export default function Home(): JSX.Element {
     return (
         <div className="container">
             <main className="main">

@@ -105,7 +105,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export function Dashboard() {
+export function Dashboard(): JSX.Element {
     const classes = useStyles();
     const [open, setOpen] = React.useState(true);
     const handleDrawerOpen = () => {
@@ -162,8 +162,8 @@ export function Dashboard() {
                     <Grid container spacing={3}>
                         <Grid item xs={12} md={8} lg={9}>
                             <Paper className={fixedHeightPaper}>
-                                TODO: User's recent notifications, get referral, make referral, work on a course, make a course, or
-                                account/settings.
+                                {`TODO: User's recent notifications, get referral, make referral, work on a course, make a course, or
+                                account/settings.`}
                             </Paper>
                         </Grid>
                     </Grid>
@@ -176,7 +176,7 @@ export function Dashboard() {
     );
 }
 
-export default function DashboardWithAuthentication() {
+export default function DashboardWithAuthentication(): JSX.Element {
     const router = useRouter();
     const [session, loading] = useSession();
 
@@ -184,7 +184,7 @@ export default function DashboardWithAuthentication() {
         // TODO: from app.js do router.push("/") so they never see below p tag
         return (
             <p>
-                You're not logged in!
+                {`You're not logged in!`}
                 <FooterLinks />
             </p>
         );
