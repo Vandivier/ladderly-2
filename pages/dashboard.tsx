@@ -177,16 +177,18 @@ export function Dashboard(): JSX.Element {
 }
 
 export default function DashboardWithAuthentication(): JSX.Element {
-    const router = useRouter();
+    // const router = useRouter();
     const [session, loading] = useSession();
 
-    if (!session) {
-        // TODO: from app.js do router.push("/") so they never see below p tag
+    if (loading) {
+        return <p>Loading...</p>;
+    } else if (!session) {
         return (
-            <p>
-                {`You're not logged in!`}
+            <>
+                <p>You are not logged in!</p>
+                <button onClick={() => signIn()}>Sign in</button>
                 <FooterLinks />
-            </p>
+            </>
         );
     } else {
         return <Dashboard />;
